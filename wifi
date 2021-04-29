@@ -14,4 +14,3 @@ sudo wifi-menu
 #sudo iw wlp2s0 scan		?escanear redes wifi
 #sudo ip link set wlp2s0 up	?activar interfaz wifi
 #nmcli dev wifi connect (ssid) password (pass)
-#nmcli dev wifi connect boot0 password Economia4132
