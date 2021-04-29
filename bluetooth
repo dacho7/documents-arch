@@ -1,0 +1,16 @@
+bPluetoothctl  "iniciar bluetoot
+systemctl status bluetooth.service    "ver estado de bluetooth
+systemctl enable --now bluetooth      "iniciar bluetooth
+
+[bluetooth]# "en este estado
+power on
+agent on
+default-agent
+scan on
+#Device XX:XX:XX:XX Dispositivo bluetooth
+scan off
+trust XX:XX:XX:XX para aceptarlo como emparejado por defecto
+pair XX:XX:XX:XX hacer conexion
+connect XX:XX:XX:XX conectar
+quit
+

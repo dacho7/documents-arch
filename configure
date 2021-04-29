@@ -1,0 +1,5 @@
+feh --bg-fill image.png       "fondo de escritorio
+alsamixer                     "audio
+iw dev                        "muestra las interfaces
+iw wlp2s0 link                "Muestra el estado de la interfaz
+bluetoothctl                  "Inicia protocolo bluetooth

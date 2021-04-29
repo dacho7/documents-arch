@@ -1,0 +1,17 @@
+sudo rm /etc/netctl/wlp2s0
+sudo netctl status wlp2s0 
+sudo systemctl stop dhcpcd.service
+sudo systemctl disable dhcpcd.service
+sudo ls /var/lib/dhcpcd/
+sudo rm -fr /var/lib/dhcpcd/dhcpcd-wlp2s0*
+sudo rm /etc/systemd/system/multi-user.target.wants/netctl*
+sudo rm -fr /etc/netctl/wlp2s0*
+sudo wifi-menu
+
+
+#iw dev			?muestra las interfaces
+#iw wlp2s0 link		?estado de la interfaz wlp2s0
+#sudo iw wlp2s0 scan		?escanear redes wifi
+#sudo ip link set wlp2s0 up	?activar interfaz wifi
+#nmcli dev wifi connect (ssid) password (pass)
+#nmcli dev wifi connect boot0 password Economia4132
