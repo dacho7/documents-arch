@@ -1,0 +1,8 @@
+ssh
+
+config file   /etc/ssh/sshd_conf
+              Port 22123
+
+start server  /etc/init.d/ssh restart
+
+see help      man ssh
