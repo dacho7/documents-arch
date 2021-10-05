@@ -1,8 +1,18 @@
+ip netplan
+
+route       /etc/netplan/00-installer-config.taml
+apt install net-tools > install netplan and another tools
+netplan apply > apply configuration
+netplan generate > verify configure its ok
+
+isc-dhcp-server       /etc/dhcp/dhcp.conf
+
 ssh
 
 config file   /etc/ssh/sshd_conf
               Port 22123
 
-start server  /etc/init.d/ssh restart
-
+start server        /etc/init.d/ssh restart
+vie parameters      man ssh
 see help      man ssh
+
