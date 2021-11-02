@@ -16,3 +16,38 @@ start server        /etc/init.d/ssh restart
 vie parameters      man ssh
 see help      man ssh
 
+DNS --------------------------------------
+install bind9 
+/etc/bind/named.local.conf se configuran las zonas
+zone "david.com.co" {
+    type "master";
+    file "/etc/bind9/base";
+}
+
+cp /etc/bind/db.local /etc/bind/base
+
+etc/bind/base configuracion de domino
+
+service bind9 restart
+
+server http ----------------------------------
+
+install apache2
+
+#change route of raiz
+/etc/apache2/apache.conf
+ultimate confi of directo change route for default route
+<Directory "/etc/nuevaruta/">
+    .
+    .
+    .
+</Directory>
+also change in /etc/apache2/sites-available/000-default.conf
+
+.
+.
+ServerAdm..
+DocumentRoot /etc/nuevaruta
+
+#change port of apache
+Change port in start of /ect/apache2/sites-available/000-default.conf and /etc/apache2/ports.conf in Port 80 to Port ...
