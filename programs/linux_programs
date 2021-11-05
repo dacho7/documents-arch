@@ -51,3 +51,5 @@ DocumentRoot /etc/nuevaruta
 
 #change port of apache
 Change port in start of /ect/apache2/sites-available/000-default.conf and /etc/apache2/ports.conf in Port 80 to Port ...
+
+a2enmod ssl to use https
