@@ -3,3 +3,11 @@ alsamixer                     "audio
 iw dev                        "muestra las interfaces
 iw wlp2s0 link                "Muestra el estado de la interfaz
 bluetoothctl                  "Inicia protocolo bluetooth
+
+
+make clean      //delete files trash
+rm -f config.h   // delete confi.h            //before create branch
+git reset --hard origin/master
+
+
+make && sudo make clean install     //after merge from master to another branch

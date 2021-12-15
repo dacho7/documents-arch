@@ -1,0 +1,21 @@
+#Apache
+/etc/httpd/conf/httpd.conf
+<>
+
+<Directory "/srv/http">
+
+AllowOverride None  > AllowOverride All
+
+Alsamixer
+
+/etc/modprobe.d/alsa-base.conf  >> this directory don't exist
+options snd-hda-intel model=asus-zenbook
+
+sudo nano /usr/share/alsa-card-profile/mixer/paths/analog-output.conf.common
+[Element Master]
+volume = ignore   <---
+
+/etc/asound.conf
+
+/usr/share/doc/alacritty/example/alacritty.yml
+
