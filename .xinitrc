@@ -32,8 +32,17 @@ fi
 # start wallpaper
 #var=$(shuf -i0-3 -n1)
 #var="Documents/images/wallpaper/"$var".jpg"
-var="Documents/wallpaper/fondo.jpg"
+var=$(shuf -i1-6 -n1)
+var="Documents/Images/fondo$var.jpg"
 feh --bg-fill $var &
+
+
+#dwm status
+dwmstatus 2>&1 >/dev/null &
+/home/dacho/.wdmanager/dwm-bar/dwm_bar.sh &
+
+# Keyboard
+setxkbmap en &
 
 # start dwm
 exec dwm &
@@ -49,6 +58,8 @@ while true; do
   xsetroot -name "  $user |  $storage |  Cpu: $cpu% |  Ram: $memory Mb/s |  $datenow $hora "
   sleep 1s
 done
+
+picom --experimental-backends &
 
 # restart dwm startx
 #while true; do
