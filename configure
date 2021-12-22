@@ -11,3 +11,6 @@ git reset --hard origin/master
 
 
 make && sudo make clean install     //after merge from master to another branch
+
+sound
+/etc/asound.conf
